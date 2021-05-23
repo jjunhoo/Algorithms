@@ -3,7 +3,7 @@ package testdome;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class uniqueNames {
+public class UniqueNames {
     // 중복 없이 이름 배열 리턴
     public static String[] uniqueNames(String[] names1, String[] names2) {
 
@@ -25,6 +25,6 @@ public class uniqueNames {
     public static void main(String[] args) {
         String[] names1 = new String[] {"Ava", "Emma", "Olivia"};
         String[] names2 = new String[] {"Olivia", "Sophia", "Emma"};
-        System.out.println(String.join(", ", uniqueNames.uniqueNames(names1, names2))); // should print Ava, Emma, Olivia, Sophia
+        System.out.println(String.join(", ", UniqueNames.uniqueNames(names1, names2))); // should print Ava, Emma, Olivia, Sophia
     }
 }
