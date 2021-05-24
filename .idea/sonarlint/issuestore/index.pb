@@ -1,0 +1,25 @@
+
+P
+ src/main/java/testdome/Song.java,5/3/538cd0370a657082f3b8921605c51ab82ac22c6b
+R
+"src/main/java/testdome/TwoSum.java,e/0/e0abfaabf6f8e4f3b5cc2e2762df858b655b867d
+S
+#src/main/java/testdome/Account.java,6/3/63058270b66cdfd390eeee7c017c78c5281ca608
+W
+'src/test/java/testdome/AccountTest.java,c/4/c43dbe19864ba5beb85a49fa425673e074d5f663
+W
+'src/main/java/testdome/UniqueNames.java,3/4/34c4ec0089e9e6bdca7da2a2f39bf6ae92343c4b
+U
+%src/main/java/testdome/UserInput.java,c/4/c4742dfc1726ccc950869069b9990c6801df85cc
+V
+&src/main/java/testdome/Palindrome.java,4/c/4c99d232518ef5846e72229072fb37fdecde86c5
+T
+$src/main/java/testdome/Snapshot.java,f/3/f3e8dfdd5790b76699eb0892b8aac80322f62100
+S
+#src/main/java/testdome/Folders.java,6/6/666aa8fc64a0928f1e0c6b4e03adbcb7f4ebe33e
+T
+$src/main/java/testdome/MathUtil.java,d/c/dcdf83b3a48b295a45859452db7adf92bd4416ea
+]
+-src/main/java/testdome/QuadraticEquation.java,5/a/5ad73f97bbdbf615a7b342e97dc2c2884a6e04f7
+V
+&src/main/java/codility/maximumSum.java,3/9/395b6f041189cc1cd812ae1675e235a35ff2ff87
