@@ -61,7 +61,13 @@ e
 5src/main/java/codility/stack_and_queues/Brackets.java,e/c/ecb983a3087e47d0b4cde10ee370a63ffc5d2069
 e
 5src/main/java/codility/sorting/MaxProductOfThree.java,f/b/fb9ac3450de5609de1e273650e7e1ac62f6b7309
-I
-src/main/java/test_1.java,1/2/12c77401441ca7e05e271256044a3b84a92ba569
-I
-src/main/java/test_2.java,0/6/06e0e83399dbd6fe80819b865a1dacee43a9148a
+S
+#src/main/java/street_11/test_1.java,b/6/b6045e03f9df34a99673bb16c07831ea0c8ff230
+S
+#src/main/java/street_11/test_2.java,c/c/ccfd7a6041dfbb4e483ae4932245fd32aedb5885
+R
+"src/main/java/leetcode/TwoSum.java,f/e/fe5510f1e80e96b32441663cdd0497d73df05637
+Z
+*src/main/java/leetcode/ReverseInteger.java,b/d/bd28d22e5476dc5f19fb250e698df45e5114770f
+\
+,src/main/java/leetcode/PalindromeNumber.java,d/1/d17db353f07fc984556a34906ad96c3d6c4bee6a
