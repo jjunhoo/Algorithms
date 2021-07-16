@@ -15,6 +15,8 @@ str은 길이 1 이상인 문자열입니다.
 s	        return
 "Zbcdefg"	"gfedcbZ"
 */
+// 문자열 내림차순으로 배치하기
+// https://programmers.co.kr/learn/courses/30/lessons/12917
 public class DescendingOrderString {
     public static String solution(String str) {
         char[] arr = str.toCharArray();

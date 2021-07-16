@@ -13,8 +13,9 @@ s는 길이가 1 이상, 100이하인 스트링입니다.
 s	return
 "abcde"	"c"
 "qwer"	"we"
-
  */
+// 가운데 글자 가져오
+// https://programmers.co.kr/learn/courses/30/lessons/12903
 public class MiddleCharacter {
 
     public static String solution(String word) {

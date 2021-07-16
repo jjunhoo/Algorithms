@@ -25,8 +25,9 @@ import java.util.TreeSet;
 arr	answer
 [1,1,3,3,0,1,1]	[1,3,0,1]
 [4,4,4,3,3]	[4,3]
-
  */
+// 같은 숫자는 싫어
+// https://programmers.co.kr/learn/courses/30/lessons/12906
 public class NotSameNumber {
     public static int[] solution(int[] arr) {
         List<Integer> list = new ArrayList();

@@ -24,6 +24,8 @@ s	        answer
 입출력 예 #2
 'p'의 개수 1개, 'y'의 개수 2개로 다르므로 false를 return 합니다.
 */
+// 문자열 내 p와 y의 개수
+// https://programmers.co.kr/learn/courses/30/lessons/12916
 public class PYcharCount {
     public static boolean solution(String str) {
         // 문자열 > 대문자 변경
