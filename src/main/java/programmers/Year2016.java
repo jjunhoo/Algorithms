@@ -13,6 +13,8 @@ package programmers;
 a	b	result
 5	24	"TUE"
  */
+// 2016년
+// https://programmers.co.kr/learn/courses/30/lessons/12901
 public class Year2016 {
     public static String getDayName(int a, int b) {
         String result = "";
