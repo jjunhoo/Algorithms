@@ -12,11 +12,8 @@ public class MaxProductOfThree {
         // 배열 오름차순 정렬
         Arrays.sort(A);
 
-        int positiveResult = 1; // 양수 결과
-        int negativeResult = 1; // 음수 결과
-
-        positiveResult = A[A.length - 1] * A[A.length - 2] * A[A.length - 3];
-        negativeResult = A[0] * A[1] * A[A.length - 1];
+        int positiveResult = A[A.length - 1] * A[A.length - 2] * A[A.length - 3]; // 양수 곱 결과
+        int negativeResult = A[0] * A[1] * A[A.length - 1]; // 음수 + 양수 곱 결과
 
         // 최종값 리턴
         return positiveResult > negativeResult ? positiveResult : negativeResult;
