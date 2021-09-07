@@ -12,32 +12,31 @@ public class ParkingSystem {
     }
 
     private boolean addCar(int carType) {
+        boolean result = Boolean.FALSE;
+
         switch (carType) {
             case 1:
                 if (this.big > 0) {
                     this.big--;
-                    return true;
-                } else {
-                    return false;
+                    result = Boolean.TRUE;
                 }
+                break;
             case 2:
                 if (this.medium > 0) {
                     this.medium--;
-                    return true;
-                } else {
-                    return false;
+                    result = Boolean.TRUE;
                 }
+                break;
             case 3:
                 if (this.small > 0) {
                     this.small--;
-                    return true;
-                } else {
-                    return false;
+                    result = Boolean.TRUE;
                 }
+                break;
             default:
                 break;
         }
-        return false;
+        return result;
     }
 
     public static void main(String[] args) {
