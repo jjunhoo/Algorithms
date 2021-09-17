@@ -38,14 +38,14 @@ public class ContainerHouse {
 
         if (floor > 10000) {
             System.out.println("Invalid floor");
-        } else {
-            for (int i = 0; i < floor; i++) {
-                int container = Integer.parseInt(br.readLine());
-                if (container != 0 && container > -999999 && container < 999999) {
-                    arrList.add(container);
-                }
-            }
-            solution(Arrays.stream(arrList.stream().mapToInt(i -> i).toArray()).boxed().toArray(Integer[]::new));
+            System.exit(1);
         }
+        for (int i = 0; i < floor; i++) {
+            int container = Integer.parseInt(br.readLine());
+            if (container != 0 && container > -999999 && container < 999999) {
+                arrList.add(container);
+            }
+        }
+        solution(Arrays.stream(arrList.stream().mapToInt(i -> i).toArray()).boxed().toArray(Integer[]::new));
     }
 }
