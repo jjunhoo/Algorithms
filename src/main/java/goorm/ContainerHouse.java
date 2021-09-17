@@ -20,10 +20,10 @@ public class ContainerHouse {
             boolean previusPlusMinus = arr[i - 1] > 0;
             boolean currentPlusMinus = arr[i] > 0;
 
-            if (previusPlusMinus == currentPlusMinus) {
+            if (previusPlusMinus == currentPlusMinus) { // 앞 뒤 부호가 같은 경우, 현재까지 카운팅한 값과 가장 높은 층수를 저장한 값 비교
                 maxCount = Math.max(count, maxCount);
-                count = 1; // 앞 뒤 부호가 같은 경우
-            } else {
+                count = 1;
+            } else { // 앞 뒤 부호가 다른 경우, 카운팅
                 count++;
                 maxCount = Math.max(count, maxCount);
             }
