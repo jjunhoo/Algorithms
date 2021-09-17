@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class BitBasic2 {
     private static void solution(String input) {
         String[] str = input.split(" ");
-        System.out.println("str : " + Arrays.toString(str));
+
         int num1 = Integer.parseInt(str[0]);
         int num2 = Integer.parseInt(str[1]);
 
