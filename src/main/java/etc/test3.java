@@ -9,6 +9,7 @@ public class test3 {
     private final static String MKDIR = "mkdir";
     private final static String CP = "cp";
     private final static String RM = "rm";
+    private final static String ROOT = "/";
 
     /**
      * 디렉토리 추가
@@ -55,19 +56,19 @@ public class test3 {
     private static void copyDirectory(List<String> directoryList, String targetDirectory, String moveBaseDirectory) {
         int targetIdx = getIndexOfMaxPathDirectory(directoryList, targetDirectory);
         String directoryPath = directoryList.get(targetIdx); // moveDirectory 시작 위치 구하기
-        String[] pointDirectory = targetDirectory.split("/"); // 이동 시키려는 디렉토리 경로 분리 (예 : /a/b -> a, b)
-        String moveDirectory = "/" + pointDirectory[pointDirectory.length - 1]; // 이동 시키려는 디렉토리의 마지막 디렉토리 추출 (예 : /a/b -> /b)
+        String[] pointDirectory = targetDirectory.split(ROOT); // 이동 시키려는 디렉토리 경로 분리 (예 : /a/b -> a, b)
+        String moveDirectory = ROOT + pointDirectory[pointDirectory.length - 1]; // 이동 시키려는 디렉토리의 마지막 디렉토리 추출 (예 : /a/b -> /b)
         int startIdx = directoryList.get(targetIdx).indexOf(moveDirectory); // pointDirectory 부터 문자열 재추출 (예 : /a/b/c -> 2)
         String directoryFullPath = directoryPath.substring(startIdx); // 추가해야 할 디렉토리 풀 경로
-        String[] directoryArr = directoryFullPath.split("/");
+        String[] directoryArr = directoryFullPath.split(ROOT);
         StringBuilder addDir = new StringBuilder();
 
-        if (!moveBaseDirectory.equals("/")) { // 이동하려는 디렉토리가 '/' 인 경우, 문자열 추가 없음
+        if (!moveBaseDirectory.equals(ROOT)) { // 이동하려는 디렉토리가 '/' 인 경우, 문자열 추가 없음
             addDir.append(moveBaseDirectory); // 이동하려는 디렉토리가 '/' 가 아닌 경우, 이동 대상 디렉토리 문자열 추가
         }
 
         for (int i = 1; i < directoryArr.length; i++) { // 이동할 경로에 이동 시킬 디렉토리 추가
-            String dir = "/" + directoryArr[i];
+            String dir = ROOT + directoryArr[i];
             directoryList.add(addDir.append(dir).toString());
         }
     }
@@ -133,13 +134,16 @@ public class test3 {
         String[] directory = { "/", "/hello", "/hello/tmp", "/root", "/root/abcd", "/root/abcd/etc", "/root/abcd/hello" };
         String[] command = { "mkdir /root/tmp", "cp /hello /root/tmp", "rm /hello" };
         System.out.println(Arrays.toString(solution(directory, command)));
+        // [ /, /root, /root/abcd, /root/abcd/etc, /root/abcd/hello, /root/tmp, /root/tmp/hello, /root/tmp/hello/tmp ]
 
         String[] directory2 = { "/" };
         String[] command2 = { "mkdir /a", "mkdir /a/b", "mkdir /a/b/c", "cp /a/b /", "rm /a/b/c"};
         System.out.println(Arrays.toString(solution(directory2, command2)));
+        // [ /, /a, /a/b, /b, /b/c ]
 
         String[] directory3 = { "/" };
         String[] command3 = { "mkdir /a", "mkdir /a/b", "mkdir /a/b/c", "rm /a/b/c"};
         System.out.println(Arrays.toString(solution(directory3, command3)));
+        // [ /, /a, /a/b ]
     }
 }
