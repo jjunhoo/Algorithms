@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 // leetcode
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
+// * input parameter 인 2개의 배열은 sort 되어 있음
 public class MedianOfTwoSortedArrays {
     private static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int[] result = new int[nums1.length + nums2.length];
