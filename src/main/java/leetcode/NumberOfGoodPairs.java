@@ -8,7 +8,10 @@ public class NumberOfGoodPairs {
         int count[] = new int[101];
 
         for (int num : nums) {
+            System.out.print("count :: " + count[num]);
             result += count[num]++;
+            System.out.print(" result :: " + result);
+            System.out.println();
         }
 
         return result;
