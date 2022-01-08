@@ -7,7 +7,6 @@ public class ShuffleString {
         for (int i = 0; i < indices.length; i++) {
             arr[indices[i]] = s.charAt(i); // 각 문자를 indices 배열의 위치에 저장
         }
-
         return String.valueOf(arr);
     }
     public static void main(String[] args) {
