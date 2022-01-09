@@ -5,8 +5,9 @@ package leetcode;
 public class Maximum69Number {
     private static int maximum69Number(int num) {
         char[] charArrNum = String.valueOf(num).toCharArray();
+        int size = charArrNum.length;
 
-        for (int i=0; i<charArrNum.length; i++) {
+        for (int i = 0; i < size; i++) {
             if (charArrNum[i] == '6') {
                 charArrNum[i] = '9';
                 break;
