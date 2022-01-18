@@ -9,7 +9,7 @@ public class MaximumSubarray {
         int max = Integer.MIN_VALUE;
         int sum = 0;
 
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < length; i++) { // 카데인
             sum += nums[i];
             max = Math.max(sum, max);
 
