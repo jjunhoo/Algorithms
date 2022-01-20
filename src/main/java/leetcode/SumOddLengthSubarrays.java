@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class SumOddLengthSubarrays {
     private static int sumOddLengthSubarrays(int[] arr) {
         int length = arr.length;
-        Boolean isOdd = length % 2 == 0 ? Boolean.FALSE : Boolean.TRUE; // 배열 길이 홀짝 판별
+        Boolean isOdd = length % 2 == 0 ? Boolean.FALSE : Boolean.TRUE; // 배열 길이를 통해 홀짝 판별
 
         int result = Arrays.stream(arr).sum() * 2; // 배열 총합
 
